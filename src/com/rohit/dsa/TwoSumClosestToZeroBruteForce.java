@@ -2,6 +2,10 @@ package com.rohit.dsa;
 
 import java.util.Arrays;
 
+/**
+ * Time Complexity - O(n^2)
+ * Space Complexity - O(1)
+ */
 public class TwoSumClosestToZeroBruteForce {
     public static void main(String[] args) {
         int[] arr = {-1,-4,-2,3,5,2,6};
@@ -10,7 +14,6 @@ public class TwoSumClosestToZeroBruteForce {
     }
 
     private static int[] findSumClosestToZero(int[] arr) {
-
         if (arr.length < 2) {
             return new int [] {-1, -1};
         }
@@ -28,6 +31,6 @@ public class TwoSumClosestToZeroBruteForce {
                 }
             }
         }
-        return new int [] {idxOne, idxTwo};
+        return new int [] {arr[idxOne], arr[idxTwo]};
     }
 }
